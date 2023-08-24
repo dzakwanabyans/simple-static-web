@@ -140,10 +140,22 @@ body {
     background-color: #A8DADC;
 }
 
+.topbar {
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    border-bottom: 3px solid white;
+    z-index: 100;
+}
+
 .container {
     width: 900px;
-    margin: auto;
+    margin: 50px auto;
     background-color: #1D3557;
+    position: relative;
 }
 
 .container .header {
