@@ -137,13 +137,13 @@ table {
 /* style */
 body {
     font: 16px/32px arial, sans-serif;
-    background-color: #82A3A1;
+    background-color: #A8DADC;
 }
 
 .container {
     width: 900px;
     margin: auto;
-    background-color: #011936;
+    background-color: #1D3557;
 }
 
 .container .header {
@@ -168,45 +168,56 @@ body {
 .navigation a {
     font-size: 25px;
     text-decoration: none;
-    color: #82A3A1;
+    color: #F1FAEE;
 }
 
 .navigation a:hover {
-    color: #fff;
+    color: #E63946;
 }
 
 .container .pics {
     height: 400px;
-    background-image: url(pics.jpg);
-    background-position: 0 -200px;
+    background-image: url(img/pics.jpg);
+    background-position: 0 -170px;
     background-size: cover;
-    border-top: 3px solid #9FC490;
+    border-top: 5px solid #E63946;
 }
 
-.content h2 {
+.main {
+    width: 600px;
+    float: left;
+    box-sizing: border-box;
+    background-color: #457B9D;
+    border-right: 50px solid #E63946;
+}
+
+.main h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 35px;
-    color: #C0DFA1;
-    padding-top: 20px;
-    text-align: center;
-
+    color: #F1FAEE;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
-.content .author {
+.main .author {
     font-size: 16px;
     font-style: italic;
     margin-top: -5px;
-    color: #C0DFA1;
+    color: #F1FAEE;
 }
 
-.content .author a {
+.main .author a {
     text-decoration: none;
-    color: #C0DFA1;
+    color: #F1FAEE;
 }
 
-.content p {
+.main .author a:hover {
+    color: #E63946;
+}
+
+.main p {
     font-size: 20px;
-    color: #C0DFA1;
+    color: #fff;
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
@@ -214,13 +225,66 @@ body {
 
 }
 
+.extend {
+    float: right;
+    box-sizing: border-box;
+    width: 300px;
+}
+
+.extend .profile {
+    padding-left: 30px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.extend img {
+    float: left;
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+.extend p {
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
 .footer {
-    background-color: #9FC490;
+    background-color: #A8DADC;
+    border-top: 5px solid white;
     padding: 10px;
 }
 
 .footer .copy {
     font-family: fantasy;
-    color: #465362;
+    font-size: 30px;
+    color: #1D3557;
     text-align: center;
+}
+
+
+/* clearing float */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
 }
