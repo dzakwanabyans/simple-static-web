@@ -134,13 +134,16 @@ table {
 
 
 
+
+
+
 /* style */
-body {
+/* body {
     font: 16px/32px arial, sans-serif;
     background-color: #A8DADC;
-}
+} */
 
-.topbar {
+/* .topbar {
     position: fixed;
     background-color: black;
     top: 0;
@@ -149,36 +152,36 @@ body {
     height: 50px;
     border-bottom: 3px solid white;
     z-index: 100;
-}
+} */
 
 .container {
-    width: 900px;
-    margin: 50px auto;
+    width: vw;
     background-color: #1D3557;
     position: relative;
 }
 
-.container .header {
-    padding: 20px;
+.header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5vmax;
+    border-bottom: 0.1em solid red;
 }
 
 .container .header .title {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 50px;
-    font-weight: bold;
+    
+    font-size: 0.8em;
+    padding: 0.3em 0 0 1em;
     font-style: italic;
     color: #fff;
     user-select: none;
 }
 
 .navigation ul li {
+    font-size: 0.5em;
     display: inline-block;
-    margin-top: 20px;
-    margin-right: 15px;
+    padding: 0 0 1em 1.6em;
 }
 
 .navigation a {
-    font-size: 25px;
     text-decoration: none;
     color: #F1FAEE;
 }
@@ -188,34 +191,36 @@ body {
 }
 
 .container .pics {
-    height: 400px;
+    height: 80vh;
     background-image: url(img/pics.jpg);
-    background-position: 0 -170px;
     background-size: cover;
-    border-top: 5px solid #E63946;
+    background-position: center;
+}
+
+.content{
+    font-size: 1vmax;
 }
 
 .main {
-    width: 600px;
+    width: 60vw;
     float: left;
     box-sizing: border-box;
     background-color: #457B9D;
-    border-right: 50px solid #E63946;
+    border-right: 1em solid #E63946;
 }
 
 .main h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 35px;
+    font-size: 3em;
     color: #F1FAEE;
-    margin-top: 20px;
-    margin-left: 20px;
+    padding: 1em 0 0 1em;
 }
 
 .main .author {
-    font-size: 16px;
+    font-size: 1.5em;
     font-style: italic;
-    margin-top: -5px;
     color: #F1FAEE;
+    padding: 0 0 1em 2em;
 }
 
 .main .author a {
@@ -228,55 +233,56 @@ body {
 }
 
 .main p {
-    font-size: 20px;
+    font-size: 2em;
     color: #fff;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding: 1em 1em 1em 1.5em;
     text-align: justify;
 
 }
 
 .extend {
+    width: 40vw;
     float: right;
     box-sizing: border-box;
-    width: 300px;
+    position: absolute;
+    right: 0;
 }
 
 .extend .profile {
-    padding-left: 30px;
-    padding-top: 40px;
-    padding-bottom: 10px;
     color: #fff;
-    font-size: 25px;
+    font-size: 3em;
+    padding: 1em 0.2em 0.5em 1.5em;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .extend img {
     float: left;
-    padding-left: 30px;
-    padding-right: 10px;
+    padding: 0.5em 0.6em 0 4.5em;
+    width: 8em;
+    height: 8em;
+    background-size: cover;
+    background-position: center;
+
 }
 
 .extend p {
     color: #fff;
-    font-size: 12px;
+    font-size: 1.5em;
     font-family: 'Times New Roman', Times, serif;
     text-align: justify;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 1em 1em 0.5em 3em;
 }
 
 
 .footer {
     background-color: #A8DADC;
-    border-top: 5px solid white;
-    padding: 10px;
+    font-size: 3vmax;
+    border-top: 0.2em solid white;
+    padding: 0.5em;
 }
 
 .footer .copy {
     font-family: fantasy;
-    font-size: 30px;
     color: #1D3557;
     text-align: center;
 }
